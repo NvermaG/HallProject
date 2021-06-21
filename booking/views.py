@@ -100,7 +100,7 @@ class BookingView(ModelViewSet):
                         return HttpResponse("Hall already Booked")
 
             # print(serializer.validated_data.get('hall'))
-            # serializer.save()
+            serializer.save()
             return Response(serializer.data)
         except:
             return Response("All Hall is Booked for this time durations")
