@@ -8,7 +8,7 @@ class HallSerializer(serializers.ModelSerializer):
 
 
 class HallRange(serializers.ModelSerializer):
-    
+
     class Meta:
         model = HallBooking
-        fields = ['booking_date','day']
+        fields = ['booking_date']

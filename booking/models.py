@@ -9,7 +9,7 @@ class HallBooking(models.Model):
     hall = models.ForeignKey(hall, on_delete=models.CASCADE, related_name="hall_bookings")
     required_capacity = models.IntegerField()
     booking_date = models.DateField(null=True)
-    day = models.DateField(null=True)
+    
     start_timeing = models.TimeField(null=True)
     end_timeing = models.TimeField(null=True)
 
