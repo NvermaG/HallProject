@@ -1,9 +1,8 @@
-from rest_framework import generics, permissions, mixins
 from rest_framework.response import Response
 from .serializers import RegisterSerializer, UserSerializer
 from django.contrib.auth.models import User
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.permissions import IsAuthenticated,AllowAny
+
 
 # Create your views here.
 
